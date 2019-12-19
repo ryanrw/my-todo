@@ -1,27 +1,29 @@
-import React from 'react'
+import React from "react";
 
-import { Todo } from './components/todo'
-import { GlobalStyle } from './components/global-style'
+import { Todo } from "./components/todo";
+import { GlobalStyle } from "./components/global-style";
 
 export function App() {
+  // @todo add real info
+  // @todo add uid in firebase rule
   const info = {
     date: {
       at: 17,
-      day: 'Tuesday',
-      month: 'Dec',
-      year: 2019,
+      day: "Tuesday",
+      month: "Dec",
+      year: 2019
     },
     event: {
-      name: 'Go to shopping',
-      from: '5 PM',
-      to: '7 PM',
-    },
-  }
+      name: "Go to shopping",
+      from: "5 PM",
+      to: "7 PM"
+    }
+  };
 
   return (
     <div>
       <Todo info={info} />
       <GlobalStyle />
     </div>
-  )
+  );
 }
